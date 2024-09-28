@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dropdown Menu</title>
+    <style>
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: rgb(0, 0, 0);
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: #004cff;
+        }
+
+        .dropbtn {
+            background-color: #ff00fb;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.6s;
+        }
+    </style>
+</head>
+<body>
+    <h2>Style dropdown menu</h2>
+    <div class="dropdown">
+        <button class="dropbtn">Spider man</button>
+        <div class="dropdown-content">
+            <a href="https://en.wikipedia.org/wiki/Andrew_Garfield">Andrew Garfield</a>
+            <a href="https://en.wikipedia.org/wiki/Tobey_Maguire">Tobey Maguire</a>
+            <a href="https://en.wikipedia.org/wiki/Tom_Holland">Tom Holland</a>
+        </div>
+    </div>
+    <p><a href="../../index.html"><button class="back-button">Back to Home</button></a></p>
+</body>
+</html>

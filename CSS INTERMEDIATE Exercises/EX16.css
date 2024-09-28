@@ -1,0 +1,26 @@
+
+.progress-container {
+    width: 100%;
+    background-color: #c2c0c0;
+    border-radius: 25px;
+    margin: 20px 0;
+    height: 30px;
+    overflow: hidden; 
+}
+
+.progress-bar {
+    width: 0;
+    height: 100%;
+    background-color: #4c65af;
+    border-radius: 25px;
+    
+    animation: progress 5s ease-in-out forwards;
+}
+@keyframes progress {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}

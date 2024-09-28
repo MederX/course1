@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Image Gallery</title>
+    <style>
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .gallery img {
+            width: calc(33.333% - 10px);
+            border-radius: 10px;
+        }
+
+        @media (max-width: 600px) {
+            .gallery img {
+                width: calc(50% - 10px);
+            }
+        }
+        @media (max-width: 480px) {
+            .gallery img {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <img src="mountain-nature-hd-wallpapers-top-beautiful-desktop-nature-images-background-wallpaper-preview.jpg" alt="Nature 1">
+        <img src="pexels-photo-268533.webp" alt="Nature 2">
+        <img src="pexels-pixabay-206359.jpg" alt="Nature 3">
+        <img src="pexels-souvenirpixels-417074.jpg" alt="Nature 4">
+        <img src="a99e34c48753fa2cf4dc04a6b01f746d.jpg" alt="Nature 5">
+        <img src="a2fdd0a0acb3be2e8cd1aa33af103398.jpg" alt="Nature 6">
+    </div>
+    <p><a href="../../index.html"><button>Back to Home</button></a></p>
+</body>
+</html>

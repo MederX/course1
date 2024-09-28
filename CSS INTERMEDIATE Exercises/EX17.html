@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Mask</title>
+    <style>
+        .masked-image {
+            width: 300px;
+            height: 300px;
+            background-image: url('pexels-souvenirpixels-417074.jpg');
+            -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300"><circle cx="150" cy="150" r="100" fill="white"/></svg>');
+            mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300"><circle cx="150" cy="150" r="100" fill="white"/></svg>');
+            mask-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <h2>Masked Image</h2>
+    <div class="masked-image"></div>
+    <p><a href="../../index.html"><button class="back-button">Back to Home</button></a></p>
+</body>
+</html>
+

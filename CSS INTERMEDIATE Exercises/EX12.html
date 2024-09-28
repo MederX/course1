@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS Accordion</title>
+    <style>
+        .accordion {
+            background-color: #eee;
+            cursor: pointer;
+            padding: 10px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            transition: 0.6s;
+        }
+        .panel {
+            padding: 0 10px;
+            background-color: rgb(119, 64, 64);
+            display: none;
+            overflow: hidden;
+        }
+        .accordion:active + .panel {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <button class="accordion">Section 1</button>
+    <div class="panel">
+        <p>Do not go to the second section</p>
+    </div>
+
+    <button class="accordion">Section 2</button>
+    <div class="panel">
+        <p>I'm behind you...</p>
+    </div>
+    <p><a href="../../index.html"><button class="back-button">Back to Home</button></a></p>
+</body>
+</body>
+</html>
